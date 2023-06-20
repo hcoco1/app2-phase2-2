@@ -1,6 +1,8 @@
 import Cards from "./Cards";
 import Filter from './Filter';
 import React, { useState, useEffect } from "react";
+import Spinner from 'react-bootstrap/Spinner';
+
 
 
 function CardsContainer() {
@@ -10,7 +12,7 @@ function CardsContainer() {
   const [priceCategory, setPriceCategory] = useState("All");
   const [typeCategory, setTypeCategory] = useState("All");
   const [operationCategory, setOperationCategory] = useState("All");
-  
+
 
   const handlePriceChange = (value) => {
     setPriceCategory(value);
@@ -53,7 +55,7 @@ function CardsContainer() {
       });
   }, []);
 
-  if (!isLoaded) return <h6>Loading...Because this App is using a free web service as a database, there will
+  if (!isLoaded) return <h6 className="loadinmessage"><Spinner animation="border" /> Loading...Because this App is using a free web service as a database, there will
     be a delay in the response to the first request after a period of inactivity
     while the instance spins up.</h6>
 
@@ -68,6 +70,7 @@ function CardsContainer() {
   })
   return (
     <div className="container" >
+
       <Filter
         priceCategory={priceCategory}
         onPriceCategoryChange={handlePriceChange}

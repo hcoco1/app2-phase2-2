@@ -3,171 +3,162 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  }
-
-  body {
-    background: #9194a4;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-  }
-  
-  .myform {
-  max-width: 500px;
-    margin: 0 auto;
-    max-width: 400px;
-    
-    border-style: solid;
-    margin-top: 3%;
-   
-  }
-
- .filterForm {
-margin: auto;
-padding-top: 2%;
-  } 
-
-  select {
-    border-style: none;
-    color: #5a5656;
-    padding-left: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
-  hr.style1 {
-    border-top: 6px double #433f3f;
-    width: 100%;
-  }
-  
-  h1 {
-    font-weight: 100;
-    color: white;
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(79, 98, 148);
-    
-  }
-
-  h2.addForm {
-    text-align: center;
-    margin-top: 10%;
-
-
-  }
-  
-h2.filterForm {
-  text-align: center;
-  margin-top: 10%;
 }
-    
 
-  
-  
-  p {
-    color: #903d5a;
-  }
-  
+body {
+  background: #9194a4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
 
-  
-  input {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid white;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  
-  label {
-    line-height: 2;
-    text-align: left;
-    display: block;
-    margin-bottom: 13px;
-    margin-top: 20px;
-    color: white;
-    font-size: 14px;
-    font-weight: 200;
-  }
-  
-  button[type="submit"],
-  input[type="submit"] {
-    background: #ec5990;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 10px;
-  }
-  
-  button[type="submit"]:hover,
-  input[type="submit"]:hover {
-    background: #bf1650;
-  }
-  
-  button[type="submit"]:active,
-  input[type="button"]:active,
-  input[type="submit"]:active {
-    transition: 0.3s all;
-    transform: translateY(3px);
-    border: 1px solid transparent;
-    opacity: 0.8;
-  }
-  
-  input:disabled {
-    opacity: 0.4;
-  }
-  
-  input[type="button"]:hover {
-    transition: 0.3s all;
-  }
-  
+.myform {
+  max-width: 500px;
+  margin: 0 auto;
+  max-width: 400px;
 
-  
+  border-style: solid;
+  margin-top: 3%;
+}
 
-  
-  button[type="button"] {
-    display: block;
-    appearance: none;
-    background: #1473bc;
-    color: white;
-    border: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 4px;
-  }
-  
-  hr {
-    margin-top: 30px;
-  }
-  
-  button {
-    display: block;
-    appearance: none;
-    margin-top: 40px;
-    border: 1px solid #333;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 4px;
-  }
+.filterForm {
+  margin: 0%;
+  padding-top: 0%;
+}
 
-  .roomfac {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    justify-content: center;
+select {
+  border-style: none;
+  color: #5a5656;
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+hr.style1 {
+  border-top: 6px double #433f3f;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+h2.addForm {
+  text-align: center;
+  margin-top: 5%;
+}
+
+h2.filterFormh2 {
+  text-align: center;
+  padding-bottom:0%;
+  padding-top:10%;
+  margin: auto;
+}
+
+p {
+  color: #903d5a;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  background: #ec5990;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background: #bf1650;
+}
+
+button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+button[type="button"] {
+  display: block;
+  appearance: none;
+  background: #1473bc;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+button {
+  display: block;
+  appearance: none;
+  margin-top: 40px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.roomfac {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  justify-content: center;
 }
 
 .btn-view {
@@ -177,7 +168,7 @@ h2.filterForm {
 .btn-delete {
   margin-left: 25%;
 
-background: #903d5a;
+  background: #903d5a;
 }
 
 * {
@@ -196,14 +187,10 @@ background: #903d5a;
   min-height: 5vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   color: #fff;
   background: rgba(29, 161, 242, 1);
- 
-
- 
-
 }
 
 .App .navbar .nav-links {
@@ -212,29 +199,31 @@ background: #903d5a;
   flex-wrap: nonwrap;
   justify-content: space-around;
   list-style: none;
-  
 }
 
-.App .navbar .nav-links>a{
+.App .navbar .nav-links > a {
   color: #fff;
   text-decoration: none;
   margin-right: 5%;
   font-size: large;
   font-weight: 700;
 }
-
-
+.loadinmessage {
+  padding-top: 10%;
+}
+#inlineFormCustomSelect,
+#inlineFormCustomSelect2,
+#inlineFormCustomSelect3
+  {
+  margin: 1%;
+}
 
 @media only screen and (max-width: 600px) {
   h2.addForm {
-    
+    margin-top: 15%;
+  }
+
+  h2.filterForm {
     margin-top: 25%;
-
-
   }
-  
-h2.filterForm {
-  
-  margin-top: 25%;
 }
-  }

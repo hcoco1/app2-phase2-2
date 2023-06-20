@@ -14,12 +14,12 @@ function Filter({
 
     return (
         <>
-<h2 className='filterForm'>List and sell your property for free</h2>
+              <h2 className='filterFormh2'>List and sell your property for free</h2>
+      <hr className="style1" />
+
             <Form className="filterForm">
                 <Row className="align-items-center">
-                    <Form.Label htmlFor="inlineFormCustomSelect" column className="mr-sm-2">
-                        Price
-                    </Form.Label>
+              
 
                     <Form.Select
                         id="inlineFormCustomSelect"
@@ -32,11 +32,7 @@ function Filter({
                         <option value="450000">+ than $450K</option>
                         <option value="600000">+ than $600K</option>
                     </Form.Select>
-
-
-                    <Form.Label htmlFor="inlineFormCustomSelect2" column className="mr-sm-2">
-                        Property Type
-                    </Form.Label>
+              
 
                     <Form.Select
                         id="inlineFormCustomSelect2"
@@ -54,9 +50,7 @@ function Filter({
                     </Form.Select>
 
 
-                    <Form.Label htmlFor="inlineFormCustomSelect3" column className="mr-sm-2">
-                        Sale or Rent?
-                    </Form.Label>
+          
 
                     <Form.Select
                         id="inlineFormCustomSelect3"
@@ -70,6 +64,11 @@ function Filter({
                     </Form.Select>
 
                 </Row>
+                <input
+        style={{ display: "block", marginTop: 2 }}
+        type="reset"
+        value="Standard Reset Field Values"
+      />
             </Form>
             <hr className="style1"/>
 
