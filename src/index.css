@@ -16,9 +16,31 @@ html {
       sans-serif;
   }
   
-  form {
-    max-width: 500px;
+  .myform {
+  max-width: 500px;
     margin: 0 auto;
+    max-width: 400px;
+    
+    border-style: solid;
+    margin-top: 3%;
+   
+  }
+
+ .filterForm {
+margin: auto;
+padding-top: 2%;
+  } 
+
+  select {
+    border-style: none;
+    color: #5a5656;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  hr.style1 {
+    border-top: 6px double #433f3f;
+    width: 100%;
   }
   
   h1 {
@@ -27,13 +49,23 @@ html {
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(79, 98, 148);
+    
+  }
+
+  h2.addForm {
+    text-align: center;
+    margin-top: 10%;
+
+
   }
   
-  .form {
-    background: #0e101c;
-    max-width: 400px;
-    margin: 0 auto;
-  }
+h2.filterForm {
+  text-align: center;
+  margin-top: 10%;
+}
+    
+
+  
   
   p {
     color: #903d5a;
@@ -130,6 +162,8 @@ html {
 
   .roomfac {
     display: flex;
+    align-items: center;
+    justify-items: center;
     width: 100%;
     max-width: 100%;
     margin: 0;
@@ -159,19 +193,23 @@ background: #903d5a;
 
 .App .navbar {
   width: 100%;
-  min-height: 7vh;
+  min-height: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
   color: #fff;
   background: rgba(29, 161, 242, 1);
+ 
+
+ 
+
 }
 
 .App .navbar .nav-links {
-  width: 60%;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nonwrap;
   justify-content: space-around;
   list-style: none;
   
@@ -184,3 +222,19 @@ background: #903d5a;
   font-size: large;
   font-weight: 700;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  h2.addForm {
+    
+    margin-top: 25%;
+
+
+  }
+  
+h2.filterForm {
+  
+  margin-top: 25%;
+}
+  }

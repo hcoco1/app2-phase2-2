@@ -1,12 +1,25 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
+
+
 export default function AddNewProp() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
   console.log(errors);
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <Container fluid>
+    <Row className="roomfac">
+      <Col>
+        <hr className="style1"/>
+        <h2 className='addForm'>List and sell your property for free</h2>
+        <hr className="style1"/>
+    <form className='myform' onSubmit={handleSubmit(onSubmit)}>
       <input type="text" placeholder="Address" {...register("Address", {required: true, max: 80, min: 3, maxLength: 80})} />
       <input type="text" placeholder="City" {...register("City", {required: true, maxLength: 100})} />
       <input type="text" placeholder="State" {...register("State", {required: true, pattern: /^\S+@\S+$/i})} />
@@ -24,7 +37,7 @@ export default function AddNewProp() {
         <option value="Townhome">Townhome</option>
         <option value="House">House</option>
       </select>
-      <input type="url" placeholder="image" {...register("image", {})} />
+      <input type="url" placeholder="URL Image" {...register("image", {})} />
       <select {...register("Operation Type")}className="agentForm">
         <option value="Sale">Sale</option>
         <option value="Rent">Rent</option>
@@ -32,6 +45,10 @@ export default function AddNewProp() {
 
       <input type="submit" />
     </form>
+    </Col>
+      </Row>
+    </Container>
+
   );
 }
 
