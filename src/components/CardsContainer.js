@@ -6,13 +6,11 @@ import Spinner from 'react-bootstrap/Spinner';
 
 
 function CardsContainer() {
-
   const [properties, setProperties] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [priceCategory, setPriceCategory] = useState("All");
   const [typeCategory, setTypeCategory] = useState("All");
   const [operationCategory, setOperationCategory] = useState("All");
-
 
   const handlePriceChange = (value) => {
     setPriceCategory(value);
@@ -70,7 +68,6 @@ function CardsContainer() {
   })
   return (
     <div className="container" >
-
       <Filter
         priceCategory={priceCategory}
         onPriceCategoryChange={handlePriceChange}
